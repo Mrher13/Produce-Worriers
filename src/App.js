@@ -31,16 +31,29 @@ function Copyright(props) {
 
 const theme = createTheme();
 
+var URL = "http://localhost:3001/"
+
+const sendSignupPassword= (name, password)=>{
+  const signupCredentials = {
+    method: 'POST',
+name:name,
+password:password,
+    mode: 'cors',
+  };
+// fetch(URL,signupCredentials).then(response =>{return response.json()}).then(result =>{return console.log(result)})
+console.log(signupCredentials)
+}
+
 // function SignUp() {
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(event.TextField, event)
+    
     const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+  
+    var name= data.get('email')
+var password= data.get('password')
+    sendSignupPassword(name, password )
+   
   };
 // }
 export default function App() {
