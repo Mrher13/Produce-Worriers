@@ -18,6 +18,7 @@ import { unstable_deprecatedPropType } from '@mui/utils';
 
 function Copyright(props) {
   return (
+<div>
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
@@ -26,6 +27,11 @@ function Copyright(props) {
       {new Date().getFullYear()}
       {'.'}
     </Typography>
+
+    <h1>
+      hello world
+    </h1>
+    </div>
   );
 }
 
