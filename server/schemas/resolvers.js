@@ -11,15 +11,12 @@ const resolvers = {
         itemType: async () => {
             return await itemType.find({}).populate('item');
         },
-        class: async (parent, args) => {
-            return await Class.findById(args.id).populate('item');
-        },
-        users: async () => {
-            return User.find().populate('thoughts');
-        },
-        user: async (parent, { username }) => {
-            return User.findOne({ username }).populate('thoughts');
-        },
+        profiles: async () => {
+            return Profile.find();
+          },
+          profile: async (parent, { profileId }) => {
+            return Profile.findOne({ _id: profileId });
+          },
     },
     Mutation: {
         addUser: async (parent, { username, email, password }) => {
@@ -53,13 +50,13 @@ const resolvers = {
             // Return an `Auth` object that consists of the signed token and user's information
             return { token, user };
         },
-        additemType: async ({ itemType, Organic, Local, Farm, plu }) => {
-            // Create and return the new School object
-            return await item.create({ itemType, Organic, Local, Farm, plu });
+        additemType: async (parent, { itemType, Organic, Local, Farm, plu, retail, cost, onOrder, quantityOnHand  }) => {
+            // Create and return the new School object  
+            return await item.create({ itemType, Organic, Local, Farm, plu, retail, cost, onOrder, quantityOnHand });
         },
-        addItem: async (parent, { item, itemType, plu, Organic, Local, Farm, unitValue, category, retail, cost, onOrder, quantityOnHand }) => {
+        addItem: async (parent, { item, itemCategory, plu, unitValue, category  }) => {
             // Create and return the new School object
-            return await item.create({ item, itemType, plu, Organic, Local, Farm, unitValue, category, retail, cost, onOrder, quantityOnHand });
+            return await item.create({ item, itemCategory, plu, unitValue, category });
         },
     },
 };

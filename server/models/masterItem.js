@@ -30,7 +30,7 @@ const masterItemSchema = new Schema(
             ref: 'itemType',
         },
         Local: {
-            ttype: Schema.Types.ObjectId,
+            type: Schema.Types.ObjectId,
             required: true,
             ref: 'itemType'
         },
