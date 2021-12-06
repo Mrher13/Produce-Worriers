@@ -3,4 +3,4 @@ const itemType = require('./itemType');
 const User = require('./User');
 
 
-module.exports = { item, itemType };
+module.exports = { item, itemType, User };
