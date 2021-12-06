@@ -7,7 +7,7 @@ const itemTypeSchema = new Schema(
             type: String,
             trim: true,
             required: true,
-        },        
+        },
         Organic: {
             type: Number,
             trim: true,
@@ -24,10 +24,25 @@ const itemTypeSchema = new Schema(
             required: true,
         },
         plu: {
-            type: Schema.Types.ObjectId,
+            type: Number,
+            trim: true,
             required: true,
-            ref: 'masterItem'
-        }
+        },
+        retail: {
+            type: Number,
+            required: true,
+        },
+        cost: {
+            type: Number,
+            required: true,
+        },
+        onOrder: {
+            type: Number,
+        },
+        quantityOnHand: {
+            type: Number,
+            required: true,
+        },
     }
 );
 

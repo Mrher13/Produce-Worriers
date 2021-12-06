@@ -8,12 +8,17 @@ const masterItemSchema = new Schema(
             type: String,
             trim: true,
             required: true,
-        }, 
+        },
+        itemCategory: {
+            type: Number,
+            trim: true,
+            required: true,
+        },
         itemType: {
             type: Schema.Types.ObjectId,
             required: true,
             ref: 'itemType',
-        },               
+        },
         plu: {
             type: Number,
             trim: true,
@@ -45,23 +50,28 @@ const masterItemSchema = new Schema(
             required: true,
         },
         retail: {
-            type: Number,
+            type: Schema.Types.ObjectId,
             required: true,
+            ref: 'itemType',
         },
         cost: {
-            type: Number,
+            type: Schema.Types.ObjectId,
             required: true,
+            ref: 'itemType',
         },
         onOrder: {
-            type: Number,
+            type: Schema.Types.ObjectId,
+            required: true,
+            ref: 'itemType',
         },
         quantityOnHand: {
-            type: Number,
+            type: Schema.Types.ObjectId,
             required: true,
+            ref: 'itemType',
         },
-        
+
     },
-    
+
 );
 
 const item = model('masterItem', masterItemSchema);
