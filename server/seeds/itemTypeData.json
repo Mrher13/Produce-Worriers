@@ -1,0 +1,13 @@
+[
+    {
+       "ItemType": "Red Delicious",
+       "Organic": "Yes",
+       "Local": "no",
+       "Farm": "Whitehurst Heritage Farms",
+       "plu":"1000",
+       "retail" : "$1.99",
+        "cost" : "$.50",
+        "onOrder": "10",
+        "quantityOnHand": "5"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "username": "Jaime Martinez",
+        "email": "jaime@techfriends.dev",
+        "password": "password01"
+    },
+    {
+        "username": "Carlos Hernandez",
+        "email": "carlos@techfriends.dev",
+        "password": "password02"
+    },
+    {
+        "username": "Colin Pace",
+        "email": "colin@techfriends.dev",
+        "password": "password03"
+    },
+    {
+        "username": "Yafit Amare",
+        "email": "yafit@techfriends.dev",
+        "password": "password04"
+    }
+]
