@@ -20,57 +20,40 @@ const typeDefs = gql`
     item: ID
     itemType: String
     Organic: String
-    Local: Int
-    Farm: Professor
+    Local: String
+    Farm: String
+    plu: Int
   }
 
-  type User {
+  type Profile {
     _id: ID
-    username: String
+    name: String
     email: String
+    # There is now a field to store the user's password
     password: String
     
   }
 
   type Auth {
     token: ID!
-    user: User
+    profile: Profile
   }
-
-  type Query {
-    users: [User]
-    user(username: String!): User
-    thoughts(username: String): [Thought]
-    thought(thoughtId: ID!): Thought
-  }
-
-  # Set up an Auth type to handle returning data from a profile creating or user login
-  type Auth {
-    token: ID!
-    user: Profile
-  }
-
   type Query {
     profiles: [Profile]!
     profile(profileId: ID!): Profile
+    item: String
+    itemType: String
   }
+  
+  
+  
 
-  type Query {
-    schools: [School]
-    classes: [Class]
-    professors: [Professor]
-    class(id: ID!): Class
-  }
-
-  # Define which mutations the client is allowed to make
-  type Mutation {
-    # Set the required fields for new schools
-    addSchool(item: String!, itemType: String!, plu: Int!, Organic: String!, Local: String!, Farm: String!, unitValue: String!, category: String!, retail: Int!, cost: Int!, onOrder: Int!, quantityOnHand: Int!): item
-  }
+  
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    
+    addItemType(itemType: String!, Organic: String!, Local: String!, Farm: String!, plu: Int!): Auth
+    addItem(itemType: String!, Organic: String!, Local: String!, Farm: String!, plu: Int!, retail: Int!, cost: Int!, onOrder: Int!, quantityOnHand: Int!): Auth
   }
 `;
 

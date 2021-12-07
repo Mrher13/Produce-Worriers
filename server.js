@@ -6,11 +6,14 @@ const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-const server = new ApolloServer({
+
+const server =  new ApolloServer({
   typeDefs,
   resolvers
 });
 
+
+// server.start();
 server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));

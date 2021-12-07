@@ -1,89 +1,56 @@
 [
     {
-        "item" : "Apple",
-        "plu" : "1000",
-        "unitValue" : "per lb",
-        "category" : "fruit",
-        
+        "item": "Apple",
+        "itemCategory": "1",
+        "unitValue": "per lb",
+        "category": "fruit"
     },
     {
-        "item" : "Grapes",
-        "plu" : "2000",
-        "unitValue" : "per lb",
-        "category" : "fruit",
-        "retail" : "$.99",
-        "cost" : "$.25",
-        "onOrder": "5",
-        "quantityOnHand": "2"
+        "item": "Grapes",
+        "itemCategory": "2",
+        "category": "fruit",
+        "unitValue": "per lb"
     },
     {
-        "item" : "Potato",
-        "plu" : "3000",
-        "unitValue" : "per lb",
-        "category" : "vegetable",
-        "retail" : "$1.49",
-        "cost" : "$.50",
-        "onOrder": "0",
-        "quantityOnHand": "3"
+        "item": "Potato",
+        "itemCategory": "3",
+        "unitValue": "per lb",
+        "category": "vegetable"
     },
     {
-        "item" : "Onion",
-        "plu" : "4000",
-        "unitValue" : "per lb",
-        "category" : "vegetable",
-        "retail" : "$.79",
-        "cost" : "$.40",
-        "onOrder": "5",
-        "quantityOnHand": "2"
+        "item": "Onion",
+        "itemCategory": "4",
+        "unitValue": "per lb",
+        "category": "vegetable"
     },
     {
-        "item" : "Bell Pepper",
-        "plu" : "5000",
-        "unitValue" : "per lb",
-        "category" : "vegetable",
-        "retail" : "$.89",
-        "cost" : "$.40",
-        "onOrder": "5",
-        "quantityOnHand": "2"
+        "item": "Bell Pepper",
+        "itemCategory": "5",
+        "unitValue": "per lb",
+        "category": "vegetable"
     },
     {
-        "item" : "Tomato",
-        "plu" : "6000",
-        "unitValue" : "per lb",
-        "category" : "Fruit",
-        "retail" : "$1.29",
-        "cost" : "$.40",
-        "onOrder": "5",
-        "quantityOnHand": "2"
+        "item": "Tomato",
+        "itemCategory": "6",
+        "unitValue": "per lb",
+        "category": "Fruit"
     },
     {
-        "item" : "Strawberries 1lb",
-        "plu" : "7000",
-        "unitValue" : "ea",
-        "category" : "Fruit",
-        "retail" : "$5.99",
-        "cost" : "$3.00",
-        "onOrder": "105",
-        "quantityOnHand": "30"
+        "item": "Strawberries 1lb",
+        "itemCategory": "7",
+        "unitValue": "ea",
+        "category": "Fruit"
     },
     {
-        "item" : "Blueberries Pint",
-        "plu" : "8000",
-        "unitValue" : "ea",
-        "category" : "Fruit",
-        "retail" : "$3.99",
-        "cost" : "$1.99",
-        "onOrder": "60",
-        "quantityOnHand": "50"
+        "item": "Blueberries Pint",
+        "itemCategory": "8",
+        "unitValue": "ea",
+        "category": "Fruit"
     },
     {
-        "item" : "Bannana",
-        "plu" : "9000",
-        "unitValue" : "per lb",
-        "category" : "Fruit",
-        "retail" : "$.69",
-        "cost" : "$.40",
-        "onOrder": "50",
-        "quantityOnHand": "70"
+        "item": "Bannana",
+        "itemCategory": "9",
+        "unitValue": "per lb",
+        "category": "Fruit"
     }
 ]
