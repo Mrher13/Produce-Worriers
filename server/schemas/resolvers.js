@@ -50,7 +50,7 @@ const resolvers = {
             // Return an `Auth` object that consists of the signed token and user's information
             return { token, user };
         },
-        additemType: async (parent, { itemType, Organic, Local, Farm, plu, retail, cost, onOrder, quantityOnHand  }) => {
+        addItemType: async (parent, { itemType, Organic, Local, Farm, plu, retail, cost, onOrder, quantityOnHand  }) => {
             // Create and return the new School object  
             return await item.create({ itemType, Organic, Local, Farm, plu, retail, cost, onOrder, quantityOnHand });
         },
