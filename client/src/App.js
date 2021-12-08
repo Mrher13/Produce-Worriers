@@ -3,48 +3,48 @@ import Login from "./Components/Login"
 import './App.css';
 
 import { useMutation } from '@apollo/client';
-import { ADD_USER } from '../utils/mutations';
+//import { ADD_USER } from '../utils/mutations';
 
 
 function App() {
-  const state = {"page": undefined};
-  const URL = "http://localhost:3001";
+   const state = {"page": undefined};
+  // const URL = "http://localhost:3001";
 
-  const sendSignUp = function(userName, password) {
-    console.log(userName, password);
+  // const sendSignUp = function(userName, password) {
+  //   console.log(userName, password);
 
-    const [addUser, { error, data }] = useMutation(ADD_USER);
+  //   const [addUser, { error, data }] = useMutation(ADD_USER);
 
   
 
-    try {
-      const { data } = await addUser({
-        'variables': {"userName": userName, "password": password}
-      });
+  //   try {
+  //     const { data } =  addUser({
+  //       'variables': {"userName": userName, "password": password}
+  //     });
 
-      // Auth.login(data.addUser.token);
-    } catch (e) {
-      console.error(e);
-    }
-  };
+  //     // Auth.login(data.addUser.token);
+  //   } catch (e) {
+  //     console.error(e);
+  //   }
+  // };
   
 
-  const sendLogin = function(userName, password) {
-    console.log(userName, password);
+  // const sendLogin = function(userName, password) {
+  //   console.log(userName, password);
 
-    const options = {
-      name: userName,
-      password: password
-    }
+  //   const options = {
+  //     name: userName,
+  //     password: password
+  //   }
 
-    fetch(URL, options)
-      .then(data => {
-        return data.json();
-      })
-      .then(data => {
-        console.log(data);
-      })
-  }
+  //   fetch(URL, options)
+  //     .then(data => {
+  //       return data.json();
+  //     })
+  //     .then(data => {
+  //       console.log(data);
+  //     })
+  // }
 
 
   if (state["page"] === undefined) {
@@ -52,7 +52,7 @@ function App() {
       <div>
         <h1>
           <SignUp
-            sendSignUp = {sendSignUp}
+           
           />
         </h1>
       </div>
@@ -61,13 +61,14 @@ function App() {
     return (
       <div>
         <Login
-          sendLogin = {sendLogin}
+          
         />
       </div>
     )
   } else {
     return (
       <div>
+        Hi
         {/* <Dashboard/> component to implement */}
       </div>
     )
