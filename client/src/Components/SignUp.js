@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import "./Style.css";
+
+import { useMutation } from '@apollo/client';
+import { ADD_USER } from '../utils/mutations';
+
+import Auth from '../utils/auth';
+
 
 
 export default function SignUp(props) {
+
+
   const formSubmit = function(event) {
     event.preventDefault();
     const userName = event.target.userName.value;
