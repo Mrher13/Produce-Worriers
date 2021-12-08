@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 
 
-const masterItemSchema = new Schema(
+const itemSchema = new Schema(
     {
         item: {
             type: String,
@@ -16,27 +16,27 @@ const masterItemSchema = new Schema(
         },
         itemType: {
             type: Schema.Types.ObjectId,
-            required: true,
+            // required: true,
             ref: 'itemType',
         },
         plu: {
             type: Number,
             trim: true,
-            required: true,
+            // required: true,
         },
         Organic: {
             type: Schema.Types.ObjectId,
-            required: true,
+            // required: true,
             ref: 'itemType',
         },
         Local: {
             type: Schema.Types.ObjectId,
-            required: true,
+            // required: true,
             ref: 'itemType'
         },
         Farm: {
             type: Schema.Types.ObjectId,
-            required: true,
+            // required: true,
             ref: 'itemType'
         },
         unitValue: {
@@ -51,22 +51,22 @@ const masterItemSchema = new Schema(
         },
         retail: {
             type: Schema.Types.ObjectId,
-            required: true,
+            // required: true,
             ref: 'itemType',
         },
         cost: {
             type: Schema.Types.ObjectId,
-            required: true,
+            // required: true,
             ref: 'itemType',
         },
         onOrder: {
             type: Schema.Types.ObjectId,
-            required: true,
+            // required: true,
             ref: 'itemType',
         },
         quantityOnHand: {
             type: Schema.Types.ObjectId,
-            required: true,
+            // required: true,
             ref: 'itemType',
         },
 
@@ -74,6 +74,6 @@ const masterItemSchema = new Schema(
 
 );
 
-const item = model('masterItem', masterItemSchema);
+const Item = model('item', itemSchema);
 
-model.exports = item;
+module.exports = Item;

@@ -1,6 +1,6 @@
-const item = require('./masterItem');
-const itemType = require('./itemType');
+const Item = require('./Item');
+const ItemType = require('./ItemType');
 const User = require('./User');
 
 
-module.exports = { item, itemType, User };
+module.exports = { Item, ItemType, User };

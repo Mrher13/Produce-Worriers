@@ -3,13 +3,13 @@ const { Schema, model } = require('mongoose');
 
 const itemTypeSchema = new Schema(
     {
-        itemType: {
+        ItemType: {
             type: String,
             trim: true,
             required: true,
         },
         Organic: {
-            type: Number,
+            type: Boolean,
             trim: true,
             required: true,
         },
@@ -46,6 +46,6 @@ const itemTypeSchema = new Schema(
     }
 );
 
-const itemType = model('itemType', itemTypeSchema);
+const ItemType = model('itemType', itemTypeSchema);
 
-module.exports = itemType
+module.exports = ItemType

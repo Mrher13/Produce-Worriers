@@ -1,21 +1,33 @@
-const { item, itemType } = require('../models');
+const { Item, ItemType, User } = require('../models');
+const { signToken } = require('../utils/auth');
 
 const resolvers = {
     Query: {
-        item: async () => {
-            return await item.find({}).populate('itemType').populate({
-                path: 'masterItem',
-                populate: 'itemType',
-            });
+        items: async () => {
+            const response = await Item.find({})
+            // .populate('itemType')
+            // // .populate({
+            //     path: 'masterItem',
+            // //     populate: 'itemType',
+            // });
+            console.log(response);
+            return response
         },
-        itemType: async () => {
-            return await itemType.find({}).populate('item');
+        item: async (parent, {itemId}) => {
+            const response = await Item.findOne({ _id: itemId });
+            
+            // await Item.find({ _id: itemId });
+            console.log(response);
+            return response
         },
-        profiles: async () => {
-            return Profile.find();
-          },
-          profile: async (parent, { profileId }) => {
-            return Profile.findOne({ _id: profileId });
+        itemTypes: async () => {
+            return await ItemType.find({});
+        },
+        // profiles: async () => {
+        //     return Profile.find();
+        //   },
+          user: async (parent, { userId }) => {
+            return User.findOne({ _id: userId });
           },
     },
     Mutation: {
