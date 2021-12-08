@@ -54,3 +54,9 @@ export const ADD_ITEM = gql`
 //     token
 //   }
 // }
+
+// mutation addItem($retail: Int!, $onOrder: Int!, $cost: Int!, $quantityOnHand: Int!, $itemType: String!, $Organic: Boolean!, $Local: String!, $Farm: String!, $plu: Int!) {
+//   addItem(retail: $retail, onOrder: $onOrder, cost: $cost, quantityOnHand: $quantityOnHand, itemType: $itemType, Organic: $Organic, Local: $Local, Farm: $Farm, plu: $plu ){
+//     itemType 
+//     }
+//   }

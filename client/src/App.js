@@ -2,6 +2,9 @@ import SignUp from "./Components/SignUp";
 import Login from "./Components/Login"
 import './App.css';
 
+import { useMutation } from '@apollo/client';
+import { ADD_USER } from '../utils/mutations';
+
 
 function App() {
   const state = {"page": undefined};
@@ -10,19 +13,21 @@ function App() {
   const sendSignUp = function(userName, password) {
     console.log(userName, password);
 
-    const options = {
-      name: userName,
-      password: password
-    }
+    const [addUser, { error, data }] = useMutation(ADD_USER);
 
-    fetch(URL, options)
-      .then(data => {
-        return data.json();
-      })
-      .then(data => {
-        console.log(data);
-      })
-  }
+  
+
+    try {
+      const { data } = await addUser({
+        'variables': {"userName": userName, "password": password}
+      });
+
+      // Auth.login(data.addUser.token);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+  
 
   const sendLogin = function(userName, password) {
     console.log(userName, password);

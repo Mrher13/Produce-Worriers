@@ -64,11 +64,11 @@ const resolvers = {
         },
         addItemType: async (parent, { itemType, Organic, Local, Farm, plu, retail, cost, onOrder, quantityOnHand  }) => {
             // Create and return the new School object  
-            return await item.create({ itemType, Organic, Local, Farm, plu, retail, cost, onOrder, quantityOnHand });
+            return await ItemType.create({ itemType, Organic, Local, Farm, plu, retail, cost, onOrder, quantityOnHand });
         },
         addItem: async (parent, { item, itemCategory, plu, unitValue, category  }) => {
             // Create and return the new School object
-            return await item.create({ item, itemCategory, plu, unitValue, category });
+            return await Item.create({ item, itemCategory, plu, unitValue, category });
         },
     },
 };
