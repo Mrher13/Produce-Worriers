@@ -1,55 +1,55 @@
 [
     {
         "item": "Apple",
-        "itemCategory": "1",
+        "itemCategory": 1,
         "unitValue": "per lb",
         "category": "fruit"
     },
     {
         "item": "Grapes",
-        "itemCategory": "2",
+        "itemCategory": 2,
         "category": "fruit",
         "unitValue": "per lb"
     },
     {
         "item": "Potato",
-        "itemCategory": "3",
+        "itemCategory": 3,
         "unitValue": "per lb",
         "category": "vegetable"
     },
     {
         "item": "Onion",
-        "itemCategory": "4",
+        "itemCategory": 4,
         "unitValue": "per lb",
         "category": "vegetable"
     },
     {
         "item": "Bell Pepper",
-        "itemCategory": "5",
+        "itemCategory": 5,
         "unitValue": "per lb",
         "category": "vegetable"
     },
     {
         "item": "Tomato",
-        "itemCategory": "6",
+        "itemCategory": 6,
         "unitValue": "per lb",
         "category": "Fruit"
     },
     {
         "item": "Strawberries 1lb",
-        "itemCategory": "7",
+        "itemCategory": 7,
         "unitValue": "ea",
         "category": "Fruit"
     },
     {
         "item": "Blueberries Pint",
-        "itemCategory": "8",
+        "itemCategory": 8,
         "unitValue": "ea",
         "category": "Fruit"
     },
     {
         "item": "Bannana",
-        "itemCategory": "9",
+        "itemCategory": 9,
         "unitValue": "per lb",
         "category": "Fruit"
     }

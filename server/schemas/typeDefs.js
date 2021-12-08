@@ -1,11 +1,12 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-  type item {
-    item: ID
+  type Item {
+    _id: ID
+    item: String
     itemType: String
     plu: Int
-    Organic: String
+    Organic: Boolean
     Local: String
     Farm: String
     unitValue: String
@@ -15,19 +16,20 @@ const typeDefs = gql`
     onOrder: Int
     quantityOnHand: Int
   }
-
+  
+  
   type itemType {
     item: ID
     itemType: String
-    Organic: String
+    Organic: Boolean
     Local: String
     Farm: String
     plu: Int
   }
 
-  type Profile {
+  type User {
     _id: ID
-    name: String
+    username: String
     email: String
     # There is now a field to store the user's password
     password: String
@@ -36,13 +38,14 @@ const typeDefs = gql`
 
   type Auth {
     token: ID!
-    profile: Profile
+    user: User
   }
+
   type Query {
-    profiles: [Profile]!
-    profile(profileId: ID!): Profile
-    item: String
-    itemType: String
+    items: [Item]!
+    user(userId: ID!): User
+    item(itemId: ID!): Item
+    itemTypes: [itemType]
   }
   
   

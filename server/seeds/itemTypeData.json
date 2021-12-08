@@ -1,101 +1,101 @@
 [
     {
         "ItemType": "Red Delicious",
-        "Organic": "Yes",
+        "Organic": true,
         "Local": "no",
         "Farm": "Whitehurst Heritage Farms",
-        "plu": "1000",
-        "retail": "$1.99",
-        "cost": "$.50",
-        "onOrder": "10",
-        "quantityOnHand": "5"
+        "plu": 1000,
+        "retail": 1.99,
+        "cost": 0.50,
+        "onOrder": 10,
+        "quantityOnHand": 5
     },
     {
         "ItemType": "Red Grapes",
-        "Organic": "Yes",
+        "Organic": true,
         "Local": "yes",
         "Farm": "Whitehurst Heritage Farms",
-        "plu": "2000",
-        "retail": "$1.99",
-        "cost": "$.50",
-        "onOrder": "10",
-        "quantityOnHand": "5"
+        "plu": 2000,
+        "retail": 1.99,
+        "cost": 0.50,
+        "onOrder": 10,
+        "quantityOnHand": 5
     },
     {
         "ItemType": "Russet",
-        "Organic": "Yes",
+        "Organic": true,
         "Local": "yes",
         "Farm": "Dewberry Hills Farm",
-        "plu": "3000",
-        "retail": "$1.49",
-        "cost": "$.50",
-        "onOrder": "0",
-        "quantityOnHand": "3"
+        "plu": 3000,
+        "retail": 1.49,
+        "cost": 0.50,
+        "onOrder": 0,
+        "quantityOnHand": 3
     },
     {
         "ItemType": "Green Onion",
-        "Organic": "Yes",
+        "Organic": true,
         "Local": "yes",
         "Farm": "Dewberry Hills Farm",
-        "plu": "4000",
-        "retail": "$.79",
-        "cost": "$.40",
-        "onOrder": "5",
-        "quantityOnHand": "2"
+        "plu": 4000,
+        "retail": 0.79,
+        "cost": 0.40,
+        "onOrder": 5,
+        "quantityOnHand": 2
     },
     {
         "ItemType": "Red Bell Pepper",
-        "Organic": "Yes",
+        "Organic":true,
         "Local": "yes",
         "Farm": "Richardson Organic",
-        "plu": "5000",
-        "retail": "$.89",
-        "cost": "$.40",
-        "onOrder": "5",
-        "quantityOnHand": "2"
+        "plu": 5000,
+        "retail": 0.89,
+        "cost": 0.40,
+        "onOrder": 5,
+        "quantityOnHand": 2
     },
     {
         "ItemType": "Roma Red",
-        "Organic": "Yes",
+        "Organic": true,
         "Local": "yes",
         "Farm": "Richardson Organic",
-        "plu": "6000",
-        "retail": "$1.29",
-        "cost": "$.40",
-        "onOrder": "5",
-        "quantityOnHand": "2"
+        "plu": 6000,
+        "retail": 1.29,
+        "cost": 0.40,
+        "onOrder": 5,
+        "quantityOnHand": 2
     },
     {
         "ItemType": "Strawberries",
-        "Organic": "Yes",
+        "Organic": true,
         "Local": "yes",
         "Farm": "JBG",
-        "plu": "7000",
-        "retail": "$5.99",
-        "cost": "$3.00",
-        "onOrder": "105",
-        "quantityOnHand": "30"
+        "plu": 7000,
+        "retail": 5.99,
+        "cost": 3.00,
+        "onOrder": 105,
+        "quantityOnHand": 30
     },
     {
         "ItemType": "Blueberries",
-        "Organic": "Yes",
+        "Organic": true,
         "Local": "yes",
         "Farm": "JBG",
-        "plu": "8000",
-        "retail": "$3.99",
-        "cost": "$1.99",
-        "onOrder": "60",
-        "quantityOnHand": "50"
+        "plu": 8000,
+        "retail": 3.99,
+        "cost": 1.99,
+        "onOrder": 60,
+        "quantityOnHand": 50
     },
     {
         "ItemType": "Blueberries",
-        "Organic": "Yes",
+        "Organic": true,
         "Local": "yes",
         "Farm": "JBG",
-        "plu": "9000",
-        "retail": "$.69",
-        "cost": "$.40",
-        "onOrder": "50",
-        "quantityOnHand": "70"
+        "plu": 9000,
+        "retail": 0.69,
+        "cost": 0.40,
+        "onOrder": 50,
+        "quantityOnHand": 70
     }
 ]
